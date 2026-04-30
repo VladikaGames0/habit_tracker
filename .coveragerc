@@ -1,0 +1,9 @@
+[run]
+source = habits,users
+omit =
+    */migrations/*
+    manage.py
+    config/*
+
+[report]
+show_missing = True
