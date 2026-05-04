@@ -16,10 +16,10 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings")
 django.setup()
 
-from django.conf import settings
-from asgiref.sync import sync_to_async
-from telegram import Update
-from telegram.ext import Application, CommandHandler, ContextTypes
+from django.conf import settings  # noqa: E402
+from asgiref.sync import sync_to_async  # noqa: E402
+from telegram import Update  # noqa: E402
+from telegram.ext import Application, CommandHandler, ContextTypes  # noqa: E402
 
 logger = logging.getLogger(__name__)
 
